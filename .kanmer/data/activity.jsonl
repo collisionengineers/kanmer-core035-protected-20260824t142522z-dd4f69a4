@@ -1,1 +1,2 @@
 {"ts":"2026-08-24T14:28:00.602Z","id":"TICK-001","op":"create","to":"review","actor":"core-035-public-fixture"}
+{"ts":"2026-08-24T14:33:51.703Z","id":"TICK-001","op":"update","field":"prs","to":["https://github.com/collisionengineers/kanmer-core035-protected-20260824t142522z-dd4f69a4/pull/1"],"actor":"core-035-public-fixture"}
