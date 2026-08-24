@@ -26,6 +26,12 @@ jobs:
         with:
           node-version: 20
 
+      # Fixture-only: release-notes.test.mjs intentionally asserts the canonical
+      # Kanmer repository URL. The disposable remote remains the PR origin;
+      # this affects only the verification process's local Git identity.
+      - name: Present canonical source identity to verification
+        run: git remote set-url origin https://github.com/collisionengineers/kanmer.git
+
       - name: Run the authoritative verification rail
         run: npm ci && npm run verify
 
